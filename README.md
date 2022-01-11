@@ -115,7 +115,7 @@ Lexical Open Numerics Interchange Scheme
 			}"
 	This reference implementation uses C-strings like methods istrln() matching string.h strlen()
 	and istr1ptr() a stdlib.h calloc() wrapper for allocating an integer array 'int *padded=istr1ptr()'. 
-	It is possible to achieve the same redition using C stdio.h I/O formatters as long as radix 10
+	It is possible to achieve the same rendition using C stdio.h I/O formatters as long as radix 10
   is the destination display. Should non-decimal display be desired. The ASC Ordinal offset adjustment 
 	"+'0'" shown above shall require modification for alternate character sets such as high "[0-9A-Z]"
 	or low 'monocasedecimal' "[0-9a-z]" or alphanumerics, each modulo(36), dual case 'duocasedecimal' 
