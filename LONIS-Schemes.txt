@@ -1,0 +1,46 @@
+﻿MONO-CASE-UPPER MCU
+ASC 
+0 UP* 
+16 UP
+32 NN†
+48 ‘0’ ‘1’ ‘2’ ‘3’ ‘4’ ‘5’ ‘6’ ‘7’ ‘8’ ‘9’ 
+64 ‘A’ ‘B’ ‘C’ ‘D’ ‘E’ ‘F’ ‘G’ ‘H’ ‘I’ ‘J’ ‘K’ ‘L’ ‘M’ ‘N’ ‘O’
+80 ‘P’ ‘Q’ ‘R’ ‘S’ ‘T’ ‘U’ ‘V’ ‘W’ ‘X’ ‘Y’ ‘Z’ 
+96 
+
+MONO-CASE-LOWER MCL
+ASC 
+0 UP* 
+16 UP 
+32 NN 
+48 ‘0’ ‘1’ ‘2’ ‘3’ ‘4’ ‘5’ ‘6’ ‘7’ ‘8’ ‘9’ 
+64 NA‡ 
+80 NA 
+96 NA ‘a’ ‘b’ ‘c’ ‘d’ ‘e’ ‘f’ ‘g’ ‘h’ ‘i’ ‘j’ ‘k’ ‘l’ ‘m’ ‘n’ ‘o’
+114 ‘p’ ‘q’ ‘r’ ‘s’ ‘t’ ‘u’ ‘v’ ‘w’ ‘x’ ‘y’ ‘z’ 
+
+DUAL-CASE-ALPHANUMERIC DCA
+ASC 
+0 UP* 
+16 UP 
+32 NN 
+48 ‘0’ ‘1’ ‘2’ ‘3’ ‘4’ ‘5’ ‘6’ ‘7’ ‘8’ ‘9’ NA NA NA NA NA NA
+64 NA ‘A’ ‘B’ ‘C’ ‘D’ ‘E’ ‘F’ ‘G’ ‘H’ ‘I’ ‘J’ ‘K’ ‘L’ ‘M’ ‘N’ ‘O’
+80 ‘P’ ‘Q’ ‘R’ ‘S’ ‘T’ ‘U’ ‘V’ ‘W’ ‘X’ ‘Y’ ‘Z’ NA NA NA NA NA
+96 NA ‘a’ ‘b’ ‘c’ ‘d’ ‘e’ ‘f’ ‘g’ ‘h’ ‘i’ ‘j’ ‘k’ ‘l’ ‘m’ ‘n’ ‘o’
+114 ‘p’ ‘q’ ‘r’ ‘s’ ‘t’ ‘u’ ‘v’ ‘w’ ‘x’ ‘y’ ‘z’ NA NA NA NA NA 
+
+LEXICAL-TEXT LXT
+ASC (1965)
+0 UP*
+16 UP
+32 ‘ ‘ ‘!’ ‘”’ ‘#’ ‘$’ ’%’ ‘&’ ‘’’ ‘(‘ ‘)’ ‘*’ ‘+’ ‘’’ ‘-’ ‘.’ ‘/’
+48 ‘0’ ‘1’ ‘2’ ‘3’ ‘4’ ‘5’ ‘6’ ‘7’ ‘8’ ‘9’ ‘:’ ‘;’ ‘<’ ‘=’ ‘>’ ‘?’
+64 ‘`’ ‘A’ ‘B’ ‘C’ ‘D’ ‘E’ ‘F’ ‘G’ ‘H’ ‘I’ ‘J’ ‘K’ ‘L’ ‘M’ ‘N’ ‘O’
+80 ‘P’ ‘Q’ ‘R’ ‘S’ ‘T’ ‘U’ ‘V’ ‘W’ ‘X’ ‘Y’ ‘Z’ ‘[‘ ‘~’ ‘]’ ‘^’ ‘_’
+96 ‘@’ ‘a’ ‘b’ ‘c’ ‘d’ ‘e’ ‘f’ ‘g’ ‘h’ ‘i’ ‘j’ ‘k’ ‘l’ ‘m’ ‘n’ ‘o’
+112 ‘p’ ‘q’ ‘r’ ‘s’ ‘t’ ‘u’ ‘v’ ‘w’ ‘x’ ‘y’ ‘z’ ‘{‘ ‘¬’ ‘}’ ‘|’
+
+‡ NA: Not Applicable to Interchange Scheme
+† NN: Non-Numeric
+* UP: UNPRINTABLE ASC CODES, SO LXT is ASC 32 to ASC 126 and CASE SENSITIVE
