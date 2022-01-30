@@ -1,10 +1,8 @@
-# LONIS
-Lexical Open Numerics Interchange Scheme
 /*
  * 	LONIS:	A Lexical Open	Numerics Interchange Scheme
  * 	Origins:
  * 	"A number of user interaction settings have been identified in the interpretive APA(X)
- * 	Arbitrary Precision Arithmetic Expression experimental shell environment (see mtkAtGH/apax).
+ * 	Arbitrary Precision Arithmetic Expression experimental shell environment.
  *
  * 	Expressions in (X) are rendered in plain text numeric character, in mathematical operator 
  * 	symbols or in alphanumeric characters for variable names and other reference identifiers."
@@ -115,16 +113,24 @@ Lexical Open Numerics Interchange Scheme
 			}"
 	This reference implementation uses C-strings like methods istrln() matching string.h strlen()
 	and istr1ptr() a stdlib.h calloc() wrapper for allocating an integer array 'int *padded=istr1ptr()'. 
-	It is possible to achieve the same rendition using C stdio.h I/O formatters as long as radix 10
-  is the destination display. Should non-decimal display be desired. The ASC Ordinal offset adjustment 
-	"+'0'" shown above shall require modification for alternate character sets such as high "[0-9A-Z]"
-	or low 'monocasedecimal' "[0-9a-z]" or alphanumerics, each modulo(36), dual case 'duocasedecimal' 
-  "[0-9A-z]"  modulo(62) or 'extratext' modulo(97) of all printable keyboard symbols, with white-space and
-  punctuation. Such single character place value symbols mimick the Hexadecimals across the keyboard,
-  and are the lexical text only interchange benchmark 'lextxt.h' for extending 'C:stdio.h' to all printable
-  symbols under this scheme.
+	It is possible to achieve the same redition using C stdio.h I/O formatters as long as radix 10
+       	is the destination display. Should non-decimal display be desired. The ASC Ordinal offset
+	adjustment "+'0'" shown above shall require modification for alternate character sets such as single case
+	'monocasedecimal' "[0-9A-Z]" alphanumerics modulo(36), dual case 'duocasedecimal' "[0-9A-z]" modulo(62) or
+        'extralpha' modulo(94) of all printable keyboard symbols, with white-space and punctuation. Such single 
+        character place value symbols mimick the Hexadecimals across the keyboard, and are the lexical text only
+        interchange benchmark 'lextra.h' for extending 'C:stdio.h' to all printable symbols under this scheme.
+
+	In this initial specification the argument N in Modulo(N)  references is identical to the APA(X) Radix.
+        When lexical Modulo(N) needs to be distinguished from numeric Base(M) where M and N differ the argument
+	N in the LEXICAL Modulo(N) shall be distinguished from Radix by the 'LexBase' or 'LexMod', or the equivalent.
 	
 	NB:Although out of scope, the place value construction described here is relevant to 'factorial'
 	format registers for exact arithmetic using rational number operands as discussed elsewhere in APA(X).
-	* NB2 This document is written in C:en/US using a 'vi derivative 'vim'.
+	
+	NB2: The cardinality N for LexMod or LexBase described here is deferred to LEXIS the lexical interchange scheme
+        in contrast to this LONIS numeric interchange scheme whose functional scope differs drastically.
+
+	NB3 This document is written in C:en/US using a 'vi derivative 'vim'.
 */
+
