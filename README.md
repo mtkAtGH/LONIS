@@ -118,12 +118,15 @@
 	adjustment "+'0'" shown above shall require modification for alternate character sets such as single case
 	'monocasedecimal' "[0-9A-Z]" alphanumerics modulo(36), dual case 'duocasedecimal' "[0-9A-z]" modulo(62) or
         'extralpha' modulo(94) of all printable keyboard symbols, with white-space and punctuation. Such single 
-        character place value symbols mimick the Hexadecimals across the keyboard, and are the lexical text only
+        character place value symbols mimick the Hexadecimals (1) across the keyboard, and are the lexical text only
         interchange benchmark 'lextra.h' for extending 'C:stdio.h' to all printable symbols under this scheme.
 
 	In this initial specification the argument N in Modulo(N)  references is identical to the APA(X) Radix.
         When lexical Modulo(N) needs to be distinguished from numeric Base(M) where M and N differ the argument
 	N in the LEXICAL Modulo(N) shall be distinguished from Radix by the 'LexBase' or 'LexMod', or the equivalent.
+	
+	(1) - The strict hexadecimal scheme is now supportes in the fashion of the alphanumerics with 
+	single case Modulo16 and mixed case Modulo22
 	
 	NB:Although out of scope, the place value construction described here is relevant to 'factorial'
 	format registers for exact arithmetic using rational number operands as discussed elsewhere in APA(X).
